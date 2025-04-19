@@ -1,0 +1,107 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.site-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3.5em;
+  color: #ff69b4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+
+.nav-buttons button {
+  background-color: #ff69b4;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-buttons button:hover {
+  transform: scale(1.05);
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.glitter-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff69b4, #ffb6c1);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: glitterFade 2s infinite alternate;
+}
+
+@keyframes glitterFade {
+  from { box-shadow: 0 0 10px #ff69b4; }
+  to { box-shadow: 0 0 20px #ffb6c1; }
+}
+
+.karibean-image {
+  display: block;
+  margin: 30px auto;
+  max-width: 60%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+}
+
+.radio-heading {
+  text-align: center;
+  color: #d94ba0;
+  font-size: 0.9em;
+  margin: 20px 0 5px;
+}
+
+.radio-note,
+.footer-note {
+  text-align: center;
+  font-size: 0.75em;
+  color: #888;
+}
+
+.spotify-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  background-color: #1db954;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.spotify-player {
+  max-width: 100%;
+  margin: 10px auto 20px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.page-placeholder {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.5em;
+}
