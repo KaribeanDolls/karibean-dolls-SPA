@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
   const [page, setPage] = useState('home');
-
   return (
     <div className="app">
       <header className="site-header">
@@ -16,14 +15,12 @@ function App() {
           <button onClick={() => setPage('vip')}>VIP</button>
         </nav>
       </header>
-
       <main>
         {page === 'home' && (
           <>
             <p className="intro">Explore ton univers baddie tropical et Y2K.</p>
             <button className="glitter-button">Clique-moi pour du glitter ✨</button>
             <img src="/karibean-girl.png" alt="Karibean Dolls" className="karibean-image" />
-
             <p className="radio-heading">Karibean Dolls Radio — Bad B*tch Mood Only</p>
             <p className="radio-note">Pas connectée ? Tu n’entendras que des extraits...</p>
             <a
@@ -45,12 +42,9 @@ function App() {
                 loading="lazy"
               ></iframe>
             </div>
-            <p className="footer-note">
-              © 2025 Karibean Dolls. Playlist intégrée via Spotify – tous droits réservés aux artistes.
-            </p>
+            <p className="footer-note">© 2025 Karibean Dolls. Playlist intégrée via Spotify – tous droits réservés aux artistes.</p>
           </>
         )}
-
         {page === 'products' && <h2 className="page-placeholder">Produits à venir...</h2>}
         {page === 'lookbook' && <h2 className="page-placeholder">Lookbook à venir...</h2>}
         {page === 'contact' && <h2 className="page-placeholder">Contact à venir...</h2>}
@@ -59,5 +53,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
